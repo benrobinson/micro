@@ -1,6 +1,6 @@
 # micro
 
-A tiny CSS framework
+A tiny CSS framework -- it's recommended that this be augmented through SCSS for your specific needs, or used as a minified "reset" before your main stylesheet.
 
 ## Columns
 
