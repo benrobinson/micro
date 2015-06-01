@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Micro</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="full">
+          <div class="inner">
+            <h2 class="logo heading">Micro</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <nav class="navigation">
+      <div class="nav container">
+        <a class="button toggle" href="#">Menu</a>
+        <ul class="menu">
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a>
+            <ul class="menu">
+              <li><a href="#">Item</a></li>
+              <li><a href="#">Item</a>
+                <ul class="menu">
+                  <li><a href="#">Item</a></li>
+                  <li><a href="#">Item</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="main">
+      <div class="container">
+        <div class="full">
+          <div class="inner">
+            <p class="lead">A tiny, mobile-first, opinionless CSS framework.  It just works -- oh yes.</p>
+            <hr>
+            <p>I can't get no satisfaction</p>
+          </div>
+        </div>
+        <div class="half">
+          <div class="inner">
+            <p>Here is a form.</p>
+            <form class="form">
+              <div class="group">
+                <label>Inline One</label>
+                <div class="inlined rounded">
+                  <input class="field" type="text" name="firstname" />
+                  <button class="button">OK</button>
+                </div>
+              </div>
+              <div class="group required">
+                <label>Inline Two</label>
+                <div class="inlined">
+                  <input class="field" type="text" name="lastname" />
+                  <button class="button good">Save</button>
+                </div>
+              </div>
+              <div class="group rounded">
+                <label>Normal Field</label>
+                <input class="field" type="text" name="age">
+              </div>
+              <div class="group">
+                <label>Textarea</label>
+                <textarea></textarea>
+              </div>
+              <div class="checkbox group">
+                <input type="checkbox" name="shit" value="true">
+                <label>Stuff</label>
+              </div>
+              <div class="radio group">
+                <input type="radio" name="more_shit" value="true">
+                <label>More Stuff</label>
+              </div>
+              <hr>
+              <button class="button" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="half">
+          <div class="inner">
+            <p>Here is something else.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="full">
+          <div class="inner">
+            <p>Welcome to the jungle.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="scripts">
+      <script src="js/micro.js"></script>
+    </div>
+  </body>
+</html>

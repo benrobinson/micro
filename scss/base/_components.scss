@@ -1,0 +1,129 @@
+form,
+.form {
+  position: relative; 
+}
+
+input, textarea {
+  background-color: $opaque;
+  border: 1px solid $light;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 100%;
+  padding: $pad;
+  resize: vertical;
+  width: 100%;
+  &:focus {
+    outline: none; 
+  }
+}
+
+label {
+  display: block;
+  line-height: 1;
+  margin-top: $pad;
+  margin-bottom: $pad/2;
+}
+
+.required>label::after {
+  content: " *";
+}
+
+.group {
+  display: block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.checkbox>input,
+.radio>input,
+.checkbox>label,
+.radio>label {
+  clear: none;
+  display: inline;
+  line-height: $pad;
+  margin-top: $pad/2;
+  margin-bottom: $pad/2;
+  width: auto;
+}
+
+.inlined {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+  .inlined>input,
+  .inlined>.field {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .inlined>button,
+  .inlined>.button,
+  .inlined>input.button{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+.rounded {
+  >input, 
+  >.field,
+  >textarea {
+    border-radius: $pad*2;
+  }
+  >button,
+  >.button,
+  >input.button {
+    border-radius: 0 $pad*2 $pad*2 0;
+  }
+}
+
+button,
+.button,
+input.button {
+  background-color: $opaque;
+  border: 1px solid $heavy;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-size: 100%;
+  max-width: 200px;
+  padding: $pad;
+  position: relative;
+  &:focus {
+    outline: none; 
+  }
+}
+  button:hover,
+  .button:hover,
+  input.button:hover {
+    background-color: $opaque + #eee; 
+  }
+
+button.toggle,
+.button.toggle,
+input.button.toggle {
+  max-width: 100%;
+  margin: 0 $pad/2;
+  @media screen and (min-width: $column*0.75) {
+    display: none;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.deferred {
+  background: $light;
+  width: 100%;
+  padding-bottom: 100%;
+}

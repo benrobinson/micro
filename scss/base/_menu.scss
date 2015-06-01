@@ -1,0 +1,62 @@
+.menu {
+  margin: 0;
+  padding: 0 $pad/2;
+  position: relative;
+  >li {
+    display: none;
+    position: relative;
+    @media screen and (min-width: $column*0.75) {
+      display: inline-block;
+    }
+    >a {
+      display: block;
+      padding: $pad/2;
+      position: relative;
+      text-decoration: none;
+    }
+    @media screen and (min-width: $column*0.75) {
+      >.menu {
+        background-color: $opaque;
+        border: 1px solid $heavy;
+        display: block;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all $trans;
+        z-index: 1;
+        >li {
+          display: block;
+          position: relative;
+          width: 200px;
+          border-bottom: 1px solid $heavy;
+          >.menu {
+            top: -1px;
+            left: 100%;
+          }
+          &:last-child {
+            border-bottom: 0;
+          }
+        }
+      }
+      &:hover {
+        >.menu {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $column*0.75) {
+  .open.menu li {
+    display: block;
+  }
+  
+  .menu>li>.menu {
+    border-left: 1px solid $light;
+  }
+}

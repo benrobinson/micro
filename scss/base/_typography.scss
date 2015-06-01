@@ -1,0 +1,62 @@
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  line-height: 1;
+  margin-top: $pad/2;
+  margin-bottom: $pad/2;
+}
+
+h1 {
+  font-size: 150%;
+}
+h2 {
+  font-size: 130%;
+}
+h3 {
+  font-size: 110%; 
+}
+h4 {
+  font-size: 100%;
+}
+h5 {
+  font-size: 90%; 
+}
+h6 {
+  font-size: 80%; 
+}
+
+p, ul, ol {
+  font-size: 100%;
+  line-height: 1.7;
+  margin-top: $pad/3;
+  margin-bottom: $pad/3;
+}
+
+a {
+  text-decoration: none;
+  transition: $trans;
+}
+
+hr {
+  background-color: $heavy;
+  border: 0;
+  height: 1px;
+  margin: $pad 0;
+}
+
+// Heading Types
+
+.logo {
+  margin: 0; 
+}
+
+.lead {
+  font-size: 140%; 
+}
+
+.heading {
+  font-size: 150%; 
+}
+
+.secondary {
+  text-transform: uppercase;
+}

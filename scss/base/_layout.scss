@@ -1,0 +1,68 @@
+// Simple Reset
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+// Columns
+
+.container {
+  max-width: $column;
+  margin: auto;
+  position: relative;
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+.inner {
+  padding: $pad; 
+}
+
+.full, .twothird, .half, .third {
+  position: relative;
+  width: 100%;
+  @media screen and (min-width: $column*0.75) {
+    float: left;
+  }
+}
+
+@media screen and (min-width: $column*0.75) {
+  .twothird {
+    width: 66.66%;
+  }
+
+  .half {
+    width: 50%;
+  }
+
+  .third {
+    width: 33.33%; 
+  }
+}
+
+// Straight Row
+
+.line, .item {
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.item > * {
+  display: inline;
+}
+
+@media screen and (min-width: $column*0.75) {
+  .line {
+    display: table-row; 
+  }
+
+  .item {
+    display: table-cell;
+    width: 1%;
+  }
+}
