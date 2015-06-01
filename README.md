@@ -29,7 +29,7 @@ To create a menu, use the following structure:
 
 ```
 <nav class="navigation nav">
-  <a class="button toggle menu-button fixed" href="#">Menu</a><!--mobile menu toggle-->
+  <a class="button toggle" href="#">Menu</a><!--mobile menu toggle-->
   <ul class="menu">
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
