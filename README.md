@@ -2,6 +2,8 @@
 
 A tiny CSS framework -- it's recommended that this be augmented through SCSS for your specific needs, or used as a minified "reset" before your main stylesheet.
 
+I consistently feel that I'm unsetting styles provided by frameworks like Bootstrap and Foundation, but it's nice to not have to write grids and forms every time.  I also wanted something with a small filesize because I'm becoming more obsessed with performance all the time.
+
 ## Columns
 
 `.container` - Main content column.  Defaults to 960px.  Clearfixes all contained columns.
