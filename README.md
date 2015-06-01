@@ -62,3 +62,7 @@ To display a button on the same line as a field, use this structure:
   <button class="button">OK</button>
 </div>
 ```
+
+## micro.js
+
+This is a brief file that just adds mobile menu functionality, and some minor formatting tweaks.  Could easily be replaced by a framework or your own custom code.  If you choose to include this file, include it in the footer for best performance.
