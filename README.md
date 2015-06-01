@@ -67,4 +67,4 @@ To display a button on the same line as a field, use this structure:
 
 This is a brief file that just adds mobile menu functionality, and some minor formatting tweaks.  Include it in the footer for best performance.
 
-Could easily be replaced by a framework or your own custom code.  Or, alternately, you can hook up your own DOM interactions here -- it's vanilla JS so you'll likely want to replace it with your framework of choice for any kind of web app.
+Could easily be replaced by a framework or your own custom code.  Or, alternately, you can hook up your own DOM interactions here.  It's just frameworkless vanilla JS, so you'll likely want to replace or integrate with your framework of choice for any kind of web app.
