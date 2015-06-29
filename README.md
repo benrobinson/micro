@@ -1,6 +1,6 @@
 # micro
 
-A tiny CSS framework -- 3KB -- it's recommended that this be augmented through SCSS for your specific needs, or used as a minified "reset" before your main stylesheet.
+A tiny CSS framework -- 4KB -- it's recommended that this be augmented through SCSS for your specific needs, or used as a minified "reset" before your main stylesheet.
 
 I consistently feel that I'm unsetting styles provided by frameworks like Bootstrap and Foundation, but it's nice to not have to write grids and forms every time I start a small project.  I also wanted something with a small filesize because I'm becoming more obsessed with performance all the time.
 
