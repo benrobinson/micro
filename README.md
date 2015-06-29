@@ -79,6 +79,8 @@ To display a button on the same line as a field, use this structure:
 </div>
 ```
 
+Note: for inline form fields to work correctly, make sure to apply the classes `.label`, `.field` and `.button`.
+
 ## micro.js
 
 This is a brief file that just adds mobile menu functionality, and some minor formatting tweaks.  Include it in the footer for best performance.
