@@ -23,7 +23,7 @@ Columns have no padding, to add padding inside a column, add a div with class:
 
 The mobile breakpoint is at 75% of the `.container` width.
 
-## "Line" Layout (Essentially Table Cells)
+## "Line" Layout
 
 There is a set of classes to allow items to be set in a row that expands to fill the full width.  I used `display: table-row` and `table-cell` to acheive this.  Structure like:
 
