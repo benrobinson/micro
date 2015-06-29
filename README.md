@@ -53,12 +53,13 @@ Form fields have default styles which can be ensured with this class:
 
 `.field`
 
-### Inline Button
+### Inline Buttons & Labels
 
 To display a button on the same line as a field, use this structure:
 
 ```
 <div class="inlined">
+  <label class="label">Hey</label>
   <input type="text" class="field" />
   <button class="button">OK</button>
 </div>
