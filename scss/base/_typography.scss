@@ -1,21 +1,35 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-weight: 300;
+  font-size: 85%;
+  @media screen and (min-width: $column*0.75) {
+    font-size: 100%;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
+  font-weight: 400;
   line-height: 1;
-  margin-top: $pad/2;
-  margin-bottom: $pad/2;
+  margin-top: $pad;
+  margin-bottom: $pad;
 }
 
 h1 {
+  font-size: 200%;
+}
+
+h2 {
   font-size: 150%;
 }
-h2 {
-  font-size: 130%;
-}
+
 h3 {
-  font-size: 110%; 
+  font-size: 110%;
 }
 h4 {
-  font-size: 100%;
+  font-size: 110%;
 }
 h5 {
   font-size: 90%; 
@@ -27,36 +41,70 @@ h6 {
 p, ul, ol {
   font-size: 100%;
   line-height: 1.7;
-  margin-top: $pad/3;
-  margin-bottom: $pad/3;
+  margin-top: $pad/2;
+  margin-bottom: $pad/2;
 }
 
 a {
   text-decoration: none;
   transition: $trans;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+blockquote {
+  background-color: $white;
+  font-style: italic;
+  font-size: 120%;
+  color: #555;
+  padding: $pad/2;
+  p {
+    padding: 0;
+    margin: $pad/2 0;
+  }
+  cite {
+    display: block;
+    font-style: normal;
+    color: black;
+    text-align: right;
+    padding-top: $pad/2;
+    margin-top: $pad/2;
+  }
 }
 
 hr {
-  background-color: $heavy;
+  background-color: $light;
   border: 0;
   height: 1px;
-  margin: $pad 0;
+  margin: $pad*2;
 }
 
 // Heading Types
 
 .logo {
-  margin: 0; 
+  margin: 0;
+  padding: 0;
+  font-size: 280%;
 }
 
 .lead {
-  font-size: 140%; 
+  font-size: 170%;
+  font-style: italic;
 }
 
 .heading {
-  font-size: 150%; 
+  font-size: 200%; 
 }
 
 .secondary {
   text-transform: uppercase;
+}
+
+.fixed {
+  font-size: $fixed-font-size;
+}
+
+.fineprint {
+  font-size: 11px;
 }
