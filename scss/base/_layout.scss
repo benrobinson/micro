@@ -1,6 +1,8 @@
 // Simple Reset
 
 body, html {
+  width: 100%;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
@@ -16,6 +18,12 @@ body, html {
     content: "";
     display: table;
   }
+}
+
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .inner {
@@ -47,22 +55,19 @@ body, html {
 // Straight Row
 
 .line, .item {
-  display: block;
   vertical-align: middle;
   text-align: center;
 }
 
-.item > * {
-  display: inline;
+.line {
+  display: table-row; 
 }
 
-@media screen and (min-width: $column*0.75) {
-  .line {
-    display: table-row; 
-  }
+.item {
+  display: table-cell;
+  width: 1%;
+}
 
-  .item {
-    display: table-cell;
-    width: 1%;
-  }
+.item > * {
+  display: inline;
 }
