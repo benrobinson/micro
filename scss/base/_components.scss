@@ -4,20 +4,24 @@ form,
 }
 
 input, textarea {
-  background-color: $opaque;
   border: 1px solid $light;
   box-sizing: border-box;
   font-family: inherit;
   font-size: 100%;
   padding: $pad;
-  resize: vertical;
+  margin: 0;
   width: 100%;
   &:focus {
     outline: none; 
   }
 }
 
+textarea {
+  resize: vertical;
+}
+
 label {
+  background-color: $opaque;
   display: block;
   line-height: 1;
   margin-top: $pad;
@@ -48,6 +52,7 @@ label {
 
 .inlined {
   display: block;
+  margin-bottom: $pad;
   position: relative;
   width: 100%;
 }
@@ -68,6 +73,18 @@ label {
     right: 0;
     bottom: 0;
   }
+  .inlined>label,
+  .inlined>.label {
+    border: 1px solid $light;
+    display: inline-block;
+    margin: 0;
+    padding: $pad;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
 
 .rounded {
   >input, 
@@ -80,36 +97,42 @@ label {
   >input.button {
     border-radius: 0 $pad*2 $pad*2 0;
   }
+  >label,
+  >.label {
+    border-radius: $pad*2 0 0 $pad*2;
+  }
+}
+
+.rounded.button {
+  border-radius: $pad*2;
 }
 
 button,
 .button,
 input.button {
-  background-color: $opaque;
-  border: 1px solid $heavy;
+  background-color: $white;
+  border: 1px solid $light;
   box-sizing: border-box;
+  color: black;
   cursor: pointer;
   display: block;
-  font-family: inherit;
   font-size: 100%;
   max-width: 200px;
   padding: $pad;
+  margin: 0;
   position: relative;
   &:focus {
     outline: none; 
   }
-}
-  button:hover,
-  .button:hover,
-  input.button:hover {
-    background-color: $opaque + #eee; 
+  &:hover {
+    background-color: $opaque + $brighten;
   }
+}
 
 button.toggle,
 .button.toggle,
 input.button.toggle {
   max-width: 100%;
-  margin: 0 $pad/2;
   @media screen and (min-width: $column*0.75) {
     display: none;
   }
@@ -124,6 +147,4 @@ img {
 
 .deferred {
   background: $light;
-  width: 100%;
-  padding-bottom: 100%;
 }
