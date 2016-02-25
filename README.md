@@ -21,7 +21,9 @@ Columns have no padding, to add padding inside a column, add a div with class:
 
 `.inner`
 
-The mobile breakpoint is at 75% of the `.container` width.
+### Mobile Breakpoint
+
+By default, the mobile breakpoint is at 75% of the `.container` width.
 
 ## "Line" Layout
 
